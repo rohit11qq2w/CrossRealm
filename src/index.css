@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-light-100 font-sans antialiased;
+    background-image: url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold leading-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+
+  h6 {
+    @apply text-base md:text-lg;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 text-light-100 hover:bg-primary-600 active:bg-primary-700 focus:ring-2 focus:ring-primary-300 focus:ring-opacity-50;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary-500 text-dark-900 hover:bg-secondary-600 active:bg-secondary-700 focus:ring-2 focus:ring-secondary-300 focus:ring-opacity-50;
+  }
+
+  .btn-accent {
+    @apply btn bg-accent-500 text-light-100 hover:bg-accent-600 active:bg-accent-700 focus:ring-2 focus:ring-accent-300 focus:ring-opacity-50;
+  }
+
+  .btn-outline {
+    @apply btn bg-transparent border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-light-100 active:bg-primary-600 focus:ring-2 focus:ring-primary-300 focus:ring-opacity-50;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-light-100 hover:bg-light-100 hover:bg-opacity-10 active:bg-light-100 active:bg-opacity-20 focus:ring-2 focus:ring-light-300 focus:ring-opacity-50;
+  }
+
+  .card {
+    @apply bg-dark-600 bg-opacity-80 backdrop-blur-md rounded-xl border border-dark-400 p-6 transition-all duration-300;
+  }
+
+  .card-glass {
+    @apply bg-dark-600 bg-opacity-40 backdrop-blur-lg rounded-xl border border-primary-500 border-opacity-30 shadow-md hover:shadow-primary-500/20 transition-all duration-300;
+  }
+
+  .game-card {
+    @apply relative overflow-hidden rounded-xl border-2 border-primary-500 border-opacity-50 shadow-lg transition-all duration-300 hover:border-primary-400 hover:shadow-neon;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary-500 bg-opacity-20 text-primary-300;
+  }
+
+  .badge-secondary {
+    @apply badge bg-secondary-500 bg-opacity-20 text-secondary-300;
+  }
+
+  .badge-success {
+    @apply badge bg-success-500 bg-opacity-20 text-success-300;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning-500 bg-opacity-20 text-warning-300;
+  }
+
+  .badge-error {
+    @apply badge bg-error-500 bg-opacity-20 text-error-300;
+  }
+
+  .badge-accent {
+    @apply badge bg-accent-500 bg-opacity-20 text-accent-300;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 bg-dark-700 text-light-100 rounded-md border border-dark-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent placeholder-light-500;
+  }
+
+  .select {
+    @apply input appearance-none bg-no-repeat bg-right pr-10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-size: 1.5em 1.5em;
+  }
+
+  .progress-bar {
+    @apply w-full h-2 bg-dark-400 rounded-full overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full bg-primary-500 rounded-full transition-all duration-500 ease-out;
+  }
+
+  .tab {
+    @apply px-4 py-2 font-medium border-b-2 border-transparent text-light-500 hover:text-light-300 hover:border-primary-500 focus:outline-none transition-all duration-200;
+  }
+
+  .tab-active {
+    @apply border-primary-500 text-light-100;
+  }
+
+  .tooltip {
+    @apply absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50 px-2 py-1 text-xs font-medium text-dark-900 bg-light-100 rounded shadow-lg;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .glow-effect {
+    @apply transition-glow duration-300 hover:shadow-neon-hover;
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400;
+  }
+}
