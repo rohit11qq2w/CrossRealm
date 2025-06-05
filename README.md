@@ -123,7 +123,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-For support, please join our [Discord community](https://discord.gg/crossrealm) or email support@crossrealm.io
+For support, email rohitjadhav45074507@gmail.com
 
 ## Acknowledgments
 
