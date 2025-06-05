@@ -114,14 +114,8 @@ We welcome contributions to CrossRealm! Please follow these steps:
 ## Team
 
 ### Core Team
-- **Sarah Chen** - Lead Developer & Architecture
-- **Marcus Rodriguez** - Game Design & Integration
-- **Aisha Patel** - DeFi Implementation
-- **James Wilson** - UI/UX Design
-
-### Advisors
-- **Dr. Elena Kowalski** - Blockchain Technology
-- **Michael Chang** - Gaming Industry
+- **Rohit Jadhav** - Lead Developer & Architecture
+- **Jayashri Deshmukh** - Game Design & Integration
 
 ## License
 
